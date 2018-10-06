@@ -7,7 +7,7 @@ export MULTI=2_0X
 %_CA: export LED_TYPE=CA
 %_CA: export CFLAGS+= -DLED_TYPE=COMMON_ANODE
 %_3_0_CA: export MULTI=3_0X
-%_3_0_CA: export += -DMAXIMUM_MULTIPLIER=MULTIPLIER_3_0X
+%_3_0_CA: export CFLAGS+= -DMAXIMUM_MULTIPLIER=MULTIPLIER_3_0X
 
 tiny13%: export CPU = attiny13
 tiny13%: export AVRDUDE_CPU = t13
